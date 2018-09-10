@@ -13,8 +13,20 @@ namespace CarSets
             Showroom.Add("Lambo");
             Showroom.Add("Corvette");
             Showroom.Add("Range Rover");
+            Showroom.Add("Porsche");
 
-            Console.WriteLine(Showroom.Count());
+            var showroomCount = Showroom.Count();
+
+            Console.WriteLine($"There are {showroomCount} cars in the Showroom");
+
+            HashSet<string> UsedLot = new HashSet<string>();
+            UsedLot.Add("Firebird");
+            UsedLot.Add("Pinto");
+
+            var usedLotCount = UsedLot.Count();
+
+            Console.WriteLine($"There are {usedLotCount} cars in the Used lot.");
+
 
             Console.ReadLine();
         }
