@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace CarSets
 {
@@ -6,7 +8,15 @@ namespace CarSets
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            HashSet<string> Showroom = new HashSet<string>();
+            Showroom.Add("Porsche");
+            Showroom.Add("Lambo");
+            Showroom.Add("Corvette");
+            Showroom.Add("Range Rover");
+
+            Console.WriteLine(Showroom.Count());
+
+            Console.ReadLine();
         }
     }
 }
