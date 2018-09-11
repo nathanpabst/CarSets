@@ -47,6 +47,13 @@ namespace CarSets
             Console.WriteLine($"There are {duplicatedCars} cars that exist in both the junkyard and showroom.");
 
             Showroom.UnionWith(Junkyard);
+            Console.WriteLine("");
+            Console.WriteLine("Showroom inventory:");
+
+            foreach (var car in Showroom)
+            {
+                Console.WriteLine(car);
+            }
 
             Console.ReadLine();
         }
