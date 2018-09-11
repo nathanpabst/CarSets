@@ -44,9 +44,9 @@ namespace CarSets
             Junkyard.Add("Cobra");
 
             var duplicatedCars = Junkyard.Intersect(Showroom).Count();
-            Console.WriteLine($"There are {duplicatedCars} cars that exist in the junkyard and showroom.");
+            Console.WriteLine($"There are {duplicatedCars} cars that exist in both the junkyard and showroom.");
 
-
+            Showroom.UnionWith(Junkyard);
 
             Console.ReadLine();
         }
