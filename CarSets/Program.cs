@@ -27,6 +27,14 @@ namespace CarSets
 
             Console.WriteLine($"There are {usedLotCount} cars in the Used lot.");
 
+            Showroom.UnionWith(UsedLot);
+            var allCarCount = Showroom.Count();
+            Console.WriteLine($"There are {allCarCount} cars in total.");
+
+            Showroom.Remove("Pinto");
+            var adjustedCount = Showroom.Count();
+            Console.WriteLine($"Sales things are happening. Your inventory is now at {adjustedCount} cars.");
+
 
             Console.ReadLine();
         }
