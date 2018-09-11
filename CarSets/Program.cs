@@ -35,6 +35,18 @@ namespace CarSets
             var adjustedCount = Showroom.Count();
             Console.WriteLine($"Sales things are happening. Your inventory is now at {adjustedCount} cars.");
 
+            HashSet<string> Junkyard = new HashSet<string>();
+            Junkyard.Add("Barchetta");
+            Junkyard.Add("Citation");
+            Junkyard.Add("Porsche");
+            Junkyard.Add("Lambo");
+            Junkyard.Add("Range Rover");
+            Junkyard.Add("Cobra");
+
+            var duplicatedCars = Junkyard.Intersect(Showroom).Count();
+            Console.WriteLine($"There are {duplicatedCars} cars that exist in the junkyard and showroom.");
+
+
 
             Console.ReadLine();
         }
